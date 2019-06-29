@@ -1,0 +1,262 @@
+@charset "UTF-8";
+body {
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  margin: 0; }
+
+.our-client {
+  background-color: #ecf5ff;
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px;
+  display: flex; }
+  .our-client .container {
+    width: 1120px;
+    margin: 0 auto; }
+    .our-client .container .client-info h3 {
+      font-size: 36px;
+      color: #283d50;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      margin: 0 0 20px 0;
+      padding-bottom: 30px; }
+    .our-client .container .client-info p {
+      text-align: center;
+      margin: auto;
+      font-size: 15px;
+      padding-bottom: 60px;
+      color: #556877;
+      width: 50%; }
+    .our-client .container .client-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .our-client .container .client-cards .card {
+        background-color: white;
+        max-width: 20%;
+        height: 160px;
+        text-align: center;
+        border: 1px solid #d6eaff; }
+        .our-client .container .client-cards .card:hover img {
+          transform: scale(1.2); }
+        .our-client .container .client-cards .card img {
+          margin-top: 50px;
+          transition: all 1s;
+          width: 60%;
+          height: auto; }
+
+.contact-us {
+  background-color: #fff; }
+  .contact-us .contact-us-container {
+    max-width: 1120px;
+    margin: 50px 30px; }
+    .contact-us .contact-us-container .contact-us-div .contact-us-h2 {
+      font-size: 36px;
+      color: #283d50;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      margin: 0 0 20px 0;
+      padding-bottom: 30px; }
+    .contact-us .contact-us-container .contact-us-div .contact-us-flex {
+      display: flex; }
+      .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-map {
+        flex: 1; }
+        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-map iframe {
+          width: 100%;
+          height: 300px; }
+      .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill {
+        margin: 0 30px;
+        width: 100%;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        flex: 1; }
+        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: none; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span {
+            color: #283d50;
+            margin: 0; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span p {
+              padding: 0 0 10px 0px;
+              line-height: 28px;
+              font-size: 14px; }
+        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form {
+          display: flex;
+          flex-direction: column; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form {
+            display: flex;
+            justify-content: space-between; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form input {
+              flex: 1; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form div > input {
+            width: 100%;
+            height: 30px;
+            margin-top: 15px;
+            padding-top: 0.5em; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form div > textarea {
+            width: 100%;
+            height: 80px;
+            margin-top: 15px;
+            margin-bottom: 15px; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button {
+            display: flex;
+            justify-content: center; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button button {
+              background: #3a8fe9;
+              border: 0;
+              border-radius: 20px;
+              padding: 12px 30px;
+              color: #fff;
+              transition: 0.3s;
+              margin: 0 auto;
+              font-size: 1em; }
+              .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button button:hover {
+                background-color: #0a4b91; }
+
+.footer-inicio {
+  background-color: #1445b3;
+  padding: 60px 0 30px 0;
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+  border: none; }
+  .footer-inicio .footer-inicio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px; }
+    .footer-inicio .footer-inicio-container .footer-inicio-section {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin: 0 auto;
+      flex: 1;
+      font-size: 14px; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-name {
+        font-size: 34px;
+        letter-spacing: 3px;
+        margin-top: 0; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .monserrat {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: “Montserrat”, sans-serif; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-adress {
+        line-height: 26px; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-inicio-nav .useful-links {
+        font-size: 14px;
+        font-weight: bold; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-inicio-nav .footer-redesociales {
+        text-decoration: none;
+        color: #eee;
+        display: block;
+        padding: 8px 0; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .fotter-newsletter-p {
+        line-height: 20px; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-form {
+        display: block;
+        margin-top: 0em;
+        max-width: 200px; }
+        .footer-inicio .footer-inicio-container .footer-inicio-section .footer-form .subscribete-input {
+          padding: 6px;
+          width: 45%;
+          margin: 0;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+          border: none; }
+        .footer-inicio .footer-inicio-container .footer-inicio-section .footer-form .subscribete-button {
+          background: #007bff;
+          width: 40%;
+          padding: 6px 0;
+          text-align: center;
+          color: #fff;
+          transition: 0.3s;
+          margin: 0;
+          font-family: inherit;
+          font-size: 14px;
+          line-height: inherit;
+          border: none; }
+    .footer-inicio .footer-inicio-container .bigger-section {
+      flex: 3; }
+    .footer-inicio .footer-inicio-container .medium-section {
+      flex: 2; }
+    .footer-inicio .footer-inicio-container .smaller-section {
+      flex: 1; }
+
+.footer-fin {
+  border: none; }
+  .footer-fin .footer-fin-container {
+    background-color: #004289;
+    color: #eee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none; }
+    .footer-fin .footer-fin-container .copyright {
+      color: #eee;
+      height: auto;
+      margin: 0 auto;
+      text-align: center; }
+    .footer-fin .footer-fin-container .credits {
+      text-align: center; }
+      .footer-fin .footer-fin-container .credits .credit-link {
+        text-decoration: none;
+        color: #eee; }
+
+@media (max-width: 768px) {
+  .our-client .container {
+    width: 768px; }
+    .our-client .container .client-cards {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 20px; }
+      .our-client .container .client-cards .card {
+        max-width: 23%;
+        border: 1px solid #d6eaff; }
+        .our-client .container .client-cards .card:hover img {
+          transform: scale(1.2); }
+        .our-client .container .client-cards .card img {
+          transition: all 1s; } }
+
+@media (max-width: 360px) {
+  .our-client .container {
+    max-width: 360px; }
+    .our-client .container .client-info p {
+      width: 80%; }
+    .our-client .container .client-cards .card {
+      max-width: 100%;
+      margin-right: 15px;
+      margin-left: 15px; }
+      .our-client .container .client-cards .card:hover img {
+        transform: scale(1.2); }
+  .contact-us {
+    background-color: #fff; }
+    .contact-us .contact-us-container {
+      max-width: 360px;
+      margin: 50px 15px; }
+      .contact-us .contact-us-container .contact-us-div .contact-us-flex {
+        display: block; }
+        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill {
+          margin: 0; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info {
+            margin: none; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span {
+              width: 100%; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form {
+            display: block; }
+  .footer-inicio .footer-inicio-container {
+    margin: 0;
+    display: block; }
+    .footer-inicio .footer-inicio-container .footer-inicio-section {
+      width: 100%;
+      margin: 0; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-form {
+        max-width: 100%; } }

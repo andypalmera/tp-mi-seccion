@@ -1,0 +1,366 @@
+$montserrat-font: "Montserrat", sans-serif;
+$background-info-section: #1445b3;
+$color-texto-navegador: #004289;
+$letter-color-bluebackground: #eee;
+$tipografia-section-info: “Montserrat”, sans-serif;
+
+@mixin titles {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-family: $montserrat-font;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    padding-bottom: 30px;
+}
+
+body{
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+// =====================
+// seccion our client
+// =====================
+.our-client{
+    background-color: #ecf5ff;
+    padding: 60px 0;
+    box-shadow: inset 0px 0px 12px 0px;
+    display: flex;
+    .container{
+        width: 1120px;
+        margin: 0 auto;
+        .client-info{
+            h3{
+                @include titles;
+            }
+            p{
+            text-align: center;
+            margin: auto;
+            font-size: 15px;
+            padding-bottom: 60px;
+            color: #556877;
+            width: 50%;
+            }
+        }
+        .client-cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+           .card{
+               background-color: white;
+               max-width: 20%;
+               height: 160px;
+               text-align: center;
+               border: 1px solid #d6eaff;
+               &:hover img{
+                transform: scale(1.2);
+                }
+               img{
+                   margin-top: 50px;
+                   transition: all 1s;
+                   width: 60%;
+                   height: auto;
+               }
+           }
+        }
+    }
+}
+// =====================
+// seccion contact us
+// =====================
+.contact-us{
+    background-color: #fff;
+    .contact-us-container{
+        max-width: 1120px;
+        margin: 50px 30px;
+        .contact-us-div{
+            .contact-us-h2{
+                @include titles;
+            }
+            .contact-us-flex{
+                display: flex;
+                .contact-us-map{
+                    flex: 1;
+                    iframe{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+                .contact-us-fill{
+                    margin: 0 30px;
+                    width: 100%; 
+                    font-size: 16px;
+                    font-family: $montserrat-font;
+                    flex: 1;  
+                    .contact-us-info{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin: none;
+                        & span{
+                            color: #283d50;
+                            margin: 0;
+                            p{
+                                padding: 0 0 10px 0px;
+                                line-height: 28px;
+                                font-size: 14px;
+                            };
+                        }
+                    }
+                    .contact-us-form{
+                        display: flex;
+                        flex-direction: column;
+                        & .form{
+                            display: flex;
+                            justify-content: space-between;
+                            & input{
+                                flex: 1;
+                            }
+                        }
+                        & div>input{
+                            width: 100%;
+                            height: 30px;
+                            margin-top: 15px;
+                            padding-top: 0.5em;
+                        }
+                        & div>textarea{
+                            width: 100%;
+                            height: 80px;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                        }
+                        & .button{
+                            display: flex;
+                            justify-content: center;
+                            & button{
+                                background: #3a8fe9;
+                                border: 0;
+                                border-radius: 20px;
+                                padding: 12px 30px;
+                                color: #fff;
+                                transition: 0.3s;
+                                margin: 0 auto;
+                                font-size: 1em;
+                                &:hover{
+                                    background-color: #0a4b91;
+                                }
+                            }  
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}
+// ====================
+// comienza el fotter
+// ====================
+
+// footer inicio
+
+.footer-inicio{
+    background-color: $background-info-section;
+    // padding: 60px 0 30px;
+    padding: 60px 0 30px 0;
+    color: $letter-color-bluebackground;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    .footer-inicio-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 80px;
+        margin-right: 80px;
+        .footer-inicio-section{ 
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: 15px;
+            margin-left: 15px;
+            margin: 0 auto;
+            flex: 1;
+            font-size: 14px;
+            .footer-name{
+                font-size: 34px;
+                letter-spacing: 3px;
+                margin-top: 0;
+            }
+            .monserrat{
+                font-size: 13px;
+                line-height: 24px;
+                margin-bottom: 0;
+                font-family: $tipografia-section-info;
+            }
+            .footer-adress{
+                line-height: 26px;
+            }
+            .footer-inicio-nav{
+                .useful-links{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                .footer-redesociales{
+                    text-decoration: none;
+                    color: $letter-color-bluebackground;
+                    display: block;
+                    padding: 8px 0;
+                }
+            }
+            .fotter-newsletter-p{
+                line-height: 20px; 
+            }
+            .footer-form{
+                display: block;
+                margin-top: 0em;
+                max-width: 200px;
+                .subscribete-input{
+                    padding: 6px;
+                    width: 45%;
+                    margin: 0;
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    border: none;
+                }
+                .subscribete-button{
+                    background: #007bff;
+                    width: 40%;
+                    padding: 6px 0;
+                    text-align: center;
+                    color: #fff;
+                    transition: 0.3s;
+                    margin: 0;
+                    font-family: inherit;
+                    font-size: 14px;
+                    line-height: inherit;
+                    border: none;
+                    &:hover{
+                    }
+                }
+            }
+        }
+        .bigger-section{
+            flex: 3;
+        }
+        .medium-section{
+            flex: 2;
+        }
+        .smaller-section{
+            flex: 1;
+        }
+    }
+}
+.footer-fin{
+    border: none;
+    .footer-fin-container{
+        background-color:#004289;
+        color: $letter-color-bluebackground;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: none;
+        .copyright{
+        color: $letter-color-bluebackground;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        }
+        .credits{
+            text-align: center;
+            .credit-link{
+            text-decoration: none;
+            color: $letter-color-bluebackground
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .our-client{
+        .container{
+            width: 768px;
+            .client-cards{
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0 20px;
+               .card{
+                   max-width: 23%;
+                   border: 1px solid #d6eaff;
+                   &:hover img{
+                    transform: scale(1.2);
+                    }
+                   img{
+                       transition: all 1s;
+                   }
+               }
+            }
+        }
+    }
+    
+}
+
+@media (max-width:360px){
+    .our-client{
+        .container{
+            max-width: 360px;
+            .client-info{
+                p{
+                width: 80%;
+                }
+            }
+            .client-cards{
+               .card{
+                   max-width: 100%;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                   &:hover img{
+                    transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    } 
+    .contact-us{
+        background-color: #fff;
+        .contact-us-container{
+            max-width: 360px;
+            margin: 50px 15px;
+            .contact-us-div{
+                .contact-us-flex{
+                    display: block;
+                    .contact-us-fill{
+                        margin: 0;
+                        .contact-us-info{
+                            margin: none;
+                            & span{
+                                width: 100%;
+                            }
+                        }
+                        .contact-us-form{
+                            & .form{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-inicio{
+        .footer-inicio-container{
+            margin: 0;
+            display: block;
+            .footer-inicio-section{ 
+                width: 100%;
+                margin: 0;
+                .footer-form{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
