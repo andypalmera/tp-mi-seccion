@@ -10,37 +10,39 @@ body {
   padding: 60px 0;
   box-shadow: inset 0px 0px 12px 0px;
   display: flex; }
-  .our-client .container {
+  .our-client .container-client {
     width: 1120px;
-    margin: 0 auto; }
-    .our-client .container .client-info h3 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .our-client .container-client .client-info .client-h {
       font-size: 36px;
       color: #283d50;
       text-align: center;
-      font-family: "Montserrat", sans-serif;
+      font-family: “Montserrat”, sans-serif;
       font-weight: 500;
       margin: 0 0 20px 0;
       padding-bottom: 30px; }
-    .our-client .container .client-info p {
+    .our-client .container-client .client-info .client-p {
       text-align: center;
       margin: auto;
       font-size: 15px;
       padding-bottom: 60px;
       color: #556877;
       width: 50%; }
-    .our-client .container .client-cards {
+    .our-client .container-client .client-cards {
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
-      .our-client .container .client-cards .card {
+      .our-client .container-client .client-cards .card {
         background-color: white;
         max-width: 20%;
         height: 160px;
         text-align: center;
         border: 1px solid #d6eaff; }
-        .our-client .container .client-cards .card:hover img {
+        .our-client .container-client .client-cards .card:hover img {
           transform: scale(1.2); }
-        .our-client .container .client-cards .card img {
+        .our-client .container-client .client-cards .card img {
           margin-top: 50px;
           transition: all 1s;
           width: 60%;
@@ -49,73 +51,78 @@ body {
 .contact-us {
   background-color: #fff; }
   .contact-us .contact-us-container {
-    max-width: 1120px;
     margin: 50px 30px; }
-    .contact-us .contact-us-container .contact-us-div .contact-us-h2 {
-      font-size: 36px;
-      color: #283d50;
-      text-align: center;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      margin: 0 0 20px 0;
-      padding-bottom: 30px; }
-    .contact-us .contact-us-container .contact-us-div .contact-us-flex {
-      display: flex; }
-      .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-map {
-        flex: 1; }
-        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-map iframe {
+    .contact-us .contact-us-container .contact-us-div {
+      width: 100%; }
+      .contact-us .contact-us-container .contact-us-div .contact-us-h2 {
+        font-size: 36px;
+        color: #283d50;
+        text-align: center;
+        font-family: “Montserrat”, sans-serif;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+        padding-bottom: 30px; }
+      .contact-us .contact-us-container .contact-us-div .contact-us-flex {
+        display: flex; }
+        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-map {
+          flex: 1; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-map iframe {
+            width: 100%;
+            height: 300px; }
+        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill {
+          margin: 0 30px;
           width: 100%;
-          height: 300px; }
-      .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill {
-        margin: 0 30px;
-        width: 100%;
-        font-size: 16px;
-        font-family: "Montserrat", sans-serif;
-        flex: 1; }
-        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          margin: none; }
-          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span {
-            color: #283d50;
-            margin: 0; }
-            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span p {
-              padding: 0 0 10px 0px;
-              line-height: 28px;
-              font-size: 14px; }
-        .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form {
-          display: flex;
-          flex-direction: column; }
-          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form {
+          font-size: 16px;
+          font-family: “Montserrat”, sans-serif;
+          flex: 1; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info {
             display: flex;
-            justify-content: space-between; }
-            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form input {
-              flex: 1; }
-          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form div > input {
-            width: 100%;
-            height: 30px;
-            margin-top: 15px;
-            padding-top: 0.5em; }
-          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form div > textarea {
-            width: 100%;
-            height: 80px;
-            margin-top: 15px;
-            margin-bottom: 15px; }
-          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: none; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span {
+              display: flex;
+              align-items: center;
+              color: #283d50;
+              margin: 0; }
+              .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span i {
+                font-size: 25px;
+                margin-right: 10px; }
+              .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-info span p {
+                line-height: 28px;
+                font-size: 14px; }
+          .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form {
             display: flex;
-            justify-content: center; }
-            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button button {
-              background: #3a8fe9;
-              border: 0;
-              border-radius: 20px;
-              padding: 12px 30px;
-              color: #fff;
-              transition: 0.3s;
-              margin: 0 auto;
-              font-size: 1em; }
-              .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button button:hover {
-                background-color: #0a4b91; }
+            flex-direction: column; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form {
+              display: flex;
+              justify-content: space-between; }
+              .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .form input {
+                flex: 1; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form div > input {
+              width: 100%;
+              height: 30px;
+              margin-top: 15px;
+              padding-top: 0.5em; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form div > textarea {
+              width: 100%;
+              height: 80px;
+              margin-top: 15px;
+              margin-bottom: 15px; }
+            .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button {
+              display: flex;
+              justify-content: center; }
+              .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button button {
+                background: #3a8fe9;
+                border: 0;
+                border-radius: 20px;
+                padding: 12px 30px;
+                color: #fff;
+                transition: 0.3s;
+                margin: 0 auto;
+                font-size: 1em; }
+                .contact-us .contact-us-container .contact-us-div .contact-us-flex .contact-us-fill .contact-us-form .button button:hover {
+                  background-color: #0a4b91; }
 
 .footer-inicio {
   background-color: #1445b3;
@@ -130,7 +137,7 @@ body {
     margin-left: 80px;
     margin-right: 80px; }
     .footer-inicio .footer-inicio-container .footer-inicio-section {
-      width: 100%;
+      height: auto;
       padding-right: 15px;
       padding-left: 15px;
       margin-right: 15px;
@@ -149,6 +156,17 @@ body {
         font-family: “Montserrat”, sans-serif; }
       .footer-inicio .footer-inicio-container .footer-inicio-section .footer-adress {
         line-height: 26px; }
+      .footer-inicio .footer-inicio-container .footer-inicio-section .footer-button-flex {
+        width: 100%;
+        height: auto; }
+        .footer-inicio .footer-inicio-container .footer-inicio-section .footer-button-flex a {
+          color: #eee;
+          font-size: 15px;
+          padding: 3%;
+          width: 20%;
+          height: auto;
+          border-radius: 50%;
+          background-color: #007bff; }
       .footer-inicio .footer-inicio-container .footer-inicio-section .footer-inicio-nav .useful-links {
         font-size: 14px;
         font-weight: bold; }
@@ -184,7 +202,7 @@ body {
           line-height: inherit;
           border: none; }
     .footer-inicio .footer-inicio-container .bigger-section {
-      flex: 3; }
+      flex: 4; }
     .footer-inicio .footer-inicio-container .medium-section {
       flex: 2; }
     .footer-inicio .footer-inicio-container .smaller-section {
@@ -210,33 +228,35 @@ body {
         color: #eee; }
 
 @media (max-width: 768px) {
-  .our-client .container {
+  .our-client .container-client {
     width: 768px; }
-    .our-client .container .client-cards {
+    .our-client .container-client .client-cards {
       max-width: 100%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin: 0 20px; }
-      .our-client .container .client-cards .card {
+      .our-client .container-client .client-cards .card {
         max-width: 23%;
         border: 1px solid #d6eaff; }
-        .our-client .container .client-cards .card:hover img {
+        .our-client .container-client .client-cards .card:hover img {
           transform: scale(1.2); }
-        .our-client .container .client-cards .card img {
+        .our-client .container-client .client-cards .card img {
           transition: all 1s; } }
 
 @media (max-width: 360px) {
-  .our-client .container {
-    max-width: 360px; }
-    .our-client .container .client-info p {
-      width: 80%; }
-    .our-client .container .client-cards .card {
-      max-width: 100%;
-      margin-right: 15px;
-      margin-left: 15px; }
-      .our-client .container .client-cards .card:hover img {
-        transform: scale(1.2); }
+  .our-client {
+    width: 100%; }
+    .our-client .container-client {
+      max-width: 360px; }
+      .our-client .container-client .client-info p {
+        width: 80%; }
+      .our-client .container-client .client-cards .card {
+        max-width: 100%;
+        margin-right: 15px;
+        margin-left: 15px; }
+        .our-client .container-client .client-cards .card:hover img {
+          transform: scale(1.2); }
   .contact-us {
     background-color: #fff; }
     .contact-us .contact-us-container {
